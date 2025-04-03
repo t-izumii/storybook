@@ -1,0 +1,38 @@
+@use '../../styles/global.scss' as *;
+
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(300);
+  padding: rem(16) rem(24);
+  font-size: rem(16);
+  min-height: rem(56);
+
+  transition: 0.3s all;
+
+  @include hover {
+    background-color: black;
+    color: white;
+  }
+
+  &.--large {
+    min-width: rem(400);
+    padding: rem(24) rem(32);
+    font-size: rem(20);
+    min-height: rem(64);
+  }
+
+  &.--small {
+    min-width: rem(200);
+    padding: rem(8) rem(16);
+    font-size: rem(12);
+    min-height: rem(32);
+  }
+
+  &:disabled {
+    background-color: #f5f5f5;
+    color: #c4c4c4;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,89 @@
+@use '../../styles/global.scss' as *;
+
+.l-flex {
+  --column: 2;
+  --gap: 2.5rem;
+  --gap-sp: var(--gap);
+
+  display: flex;
+  gap: var(--gap);
+
+  @include media-breakpoint-sp {
+    flex-direction: column;
+    gap: var(--gap-sp);
+  }
+
+  &.--wrap {
+    flex-wrap: wrap;
+  }
+
+  &.--nowrap-sp {
+    @include media-breakpoint-sp {
+      flex-flow: row nowrap;
+    }
+  }
+
+  &.--align-start {
+    align-items: flex-start;
+  }
+
+  &.--align-center {
+    align-items: center;
+  }
+
+  &.--align-end {
+    align-items: flex-end;
+  }
+
+  &.--align-start-sp {
+    @include media-breakpoint-sp {
+      align-items: flex-start;
+    }
+  }
+
+  &.--align-center-sp {
+    @include media-breakpoint-sp {
+      align-items: center;
+    }
+  }
+
+  &.--align-end-sp {
+    @include media-breakpoint-sp {
+      align-items: flex-end;
+    }
+  }
+
+  &.--justify-start {
+    justify-content: flex-start;
+  }
+
+  &.--justify-center {
+    justify-content: center;
+  }
+
+  &.--justify-end {
+    justify-content: flex-end;
+  }
+
+  &.--row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &.--row-reverse-sp {
+    @include media-breakpoint-sp {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__col {
+    width: calc((100% - (var(--column) - 1) * var(--gap)) / var(--column));
+
+    // dev
+    background-color: #000;
+    height: 100px;
+
+    @include media-breakpoint-sp {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './icon.stories';
+
+<Meta of={Stories} />
+
+# ボタンコンポーネント
+ボタンコンポーネントは、
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
+.c-icon {
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  background-color: #000;
+
+  &.--large {
+    width: rem(32);
+    height: rem(32);
+  }
+
+  &.--small {
+    width: rem(16);
+    height: rem(16);
+  }
+}
+  `}
+/>
+
+
+
+
+

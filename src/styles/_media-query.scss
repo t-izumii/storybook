@@ -1,0 +1,45 @@
+@use 'sass:map';
+
+$breakpoints: (
+    sm: 767px,
+    md: 1280px,
+);
+
+// 1280 < PC
+// 768 < tab < 1280
+// sp < 768
+
+// Desktop + Tablet
+@mixin media-breakpoint-pc-tab() {
+    @media all and (min-width: #{map.get($breakpoints, sm) + 1 }), print {
+        @content;
+    }
+}
+
+// Desktop
+@mixin media-breakpoint-pc() {
+    @media all and (min-width: #{map.get($breakpoints, md) + 1 }), print {
+        @content;
+    }
+}
+
+// Tablet
+@mixin media-breakpoint-tab() {
+    @media only screen and (min-width: #{map.get($breakpoints, sm) + 1 })  and (max-width: #{map.get($breakpoints, md) }) {
+        @content;
+    }
+}
+
+// Tablet + Phone
+@mixin media-breakpoint-tab-sp() {
+    @media only screen and (max-width: #{map.get($breakpoints, md) }) {
+        @content;
+    }
+}
+
+// Phone
+@mixin media-breakpoint-sp() {
+    @media only screen and (max-width: #{map.get($breakpoints, sm) }) {
+        @content;
+    }
+}
