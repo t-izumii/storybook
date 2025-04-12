@@ -1,5 +1,18 @@
-@use '../../styles/global.scss' as *;
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './flex.stories';
 
+<Meta of={Stories} />
+
+# Flexレイアウト
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
 .l-flex {
   --column: 2;
   --gap: 2.5rem;
@@ -109,3 +122,5 @@
     }
   }
 }
+  `}
+/>

@@ -1,0 +1,44 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './tab.stories';
+
+<Meta of={Stories} />
+
+# タブコンポーネント
+## 使用例
+
+<Canvas of={Stories.base} />
+
+
+## Js
+<Source
+  language="javascript"
+  code={`
+const tabGroups = document.querySelectorAll('.js-tabs');
+tabGroups.forEach((tabGroup) => {
+  const tabButtons = tabGroup.querySelectorAll('.js-tab-button');
+  const tabItems = tabGroup.querySelectorAll('.js-tab-item');
+
+  tabButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+
+      tabItems.forEach((item) => {
+        item.setAttribute('hidden', '');
+      });
+      tabItems[index].removeAttribute('hidden');
+
+      tabButtons.forEach((tabButton) => {
+        tabButton.classList.remove('is-active');
+        tabButton.setAttribute('aria-selected', 'false');
+      });
+      button.classList.add('is-active');
+      button.setAttribute('aria-selected', 'true');
+    });
+  });
+});
+  `}
+/>
+
+
+
+
+

@@ -1,11 +1,12 @@
-import './selectbox.scss';
+import './select.scss';
 
 export interface Props {
   active?: boolean;
   size?: 'small' | 'medium' | 'large' | 'max';
+  errorState?: boolean;
 }
 
-export const create = ({ size = 'medium', active = false }: Props) => {
+export const create = ({ size = 'medium', active = false , errorState = false }: Props) => {
   const tag = document.createElement('div');
   const select = document.createElement('select');
   const icon = document.createElement('i');
@@ -22,7 +23,7 @@ export const create = ({ size = 'medium', active = false }: Props) => {
   }
 
   tag.className = ['c-selectbox', `--${size}`].join(' ');
-  select.className = ['c-selectbox__field'].join(' ');
+  select.className = ['c-selectbox__field' , errorState ? 'is-error' : ''].filter(Boolean).join(' ');
   icon.className = ['c-selectbox__icon c-icon'].join(' ');
 
   return tag;

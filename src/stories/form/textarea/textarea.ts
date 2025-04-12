@@ -1,12 +1,13 @@
-import './textaria.scss';
+import './textarea.scss';
 
 export interface Props {
   active?: boolean;
+  errorState?: boolean;
   label: string;
   placeholder: string;
 }
 
-export const create = ({ active = false, label = '', placeholder = '' }: Props) => {
+export const create = ({ active = false, label = '', placeholder = '' , errorState = false, }: Props) => {
   const tag = document.createElement('textarea');
   tag.value = label;
   tag.placeholder = placeholder;
@@ -16,7 +17,7 @@ export const create = ({ active = false, label = '', placeholder = '' }: Props) 
     tag.disabled = true;
   }
 
-  tag.className = ['c-textarea'].join(' ');
+  tag.className = ['c-textarea' , errorState ? 'is-error' : ''].filter(Boolean).join(' ');
 
   return tag;
 };

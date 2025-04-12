@@ -3,6 +3,7 @@ import './input-text.scss';
 export interface Props {
   size?: 'small' | 'medium' | 'large' | 'max';
   active?: boolean;
+  errorState?: boolean;
   label: string;
   placeholder: string;
 }
@@ -10,6 +11,7 @@ export interface Props {
 export const create = ({
   size = 'medium',
   active = false,
+  errorState = false,
   label = '',
   placeholder = '',
 }: Props) => {
@@ -22,7 +24,7 @@ export const create = ({
     tag.disabled = true;
   }
 
-  tag.className = ['c-input-text', `--${size}`].join(' ');
+  tag.className = ['c-input-text', `--${size}`, errorState ? 'is-error' : ''].filter(Boolean).join(' ');
 
   return tag;
 };

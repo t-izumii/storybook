@@ -1,6 +1,9 @@
 @use '../../styles/global.scss' as *;
 
 .c-modal {
+  &.is-active {
+    display: block;
+  }
   &__overlay {
     position: fixed;
     top: 0;

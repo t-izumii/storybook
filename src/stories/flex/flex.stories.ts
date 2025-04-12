@@ -7,13 +7,13 @@ import { create } from './flex';
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'Layout/Flex',
-  tags: ['autodocs'],
   render: (args) => {
     return create(args);
   },
   argTypes: {
     column: { control: 'number' },
     gap: { control: 'number' },
+    gapSp: { control: 'number' },
   },
 } satisfies Meta<Props>;
 
@@ -24,5 +24,6 @@ export const base: Story = {
   args: {
     column: 2,
     gap: 24,
+    gapSp: 24,
   },
 };

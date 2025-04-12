@@ -1,0 +1,38 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './textarea.stories';
+
+<Meta of={Stories} />
+
+# テキストエリアコンポーネント
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
+.c-textarea {
+  width: 100%;
+  padding: rem(16);
+  font-size: rem(16);
+  outline: 0;
+
+  &:focus {
+    border-color: #000;
+  }
+
+  &:disabled {
+    background-color: #f5f5f5;
+    color: #c4c4c4;
+  }
+
+  &.is-error {
+    border-color: red;
+  }
+}
+  `}
+/>
+
+

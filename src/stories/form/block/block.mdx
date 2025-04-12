@@ -1,0 +1,53 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './block.stories';
+
+<Meta of={Stories} />
+
+# ラジオボタンコンポーネント
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+<Canvas of={Stories.select} />
+
+<Canvas of={Stories.radio} />
+
+<Canvas of={Stories.checkbox} />
+
+<Canvas of={Stories.textarea} />
+
+## CSS
+<Source
+  language="css"
+  code={`
+.c-form {
+  &__label {
+    font-size: rem(16);
+  }
+
+  &__subtext {
+    font-size: rem(14);
+    margin-top: rem(8);
+  }
+
+  &__field {
+    margin-top: rem(8);
+
+    &:has(.c-radio) , &:has(.c-checkbox) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(16);
+    }
+  }
+
+  &__errortext {
+    color: red;
+    font-size: rem(14);
+    margin-top: rem(8);
+  }
+}
+  `}
+/>
+
+

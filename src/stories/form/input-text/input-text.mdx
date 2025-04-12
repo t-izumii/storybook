@@ -1,5 +1,18 @@
-@use '../../../styles/global.scss' as *;
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './input-text.stories';
 
+<Meta of={Stories} />
+
+# インプットテキストコンポーネント
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
 .c-input-text {
   width: 100%;
   padding: rem(16);
@@ -35,3 +48,7 @@
     border-color: red;
   }
 }
+  `}
+/>
+
+

@@ -1,5 +1,18 @@
-@use '../../../styles/global.scss' as *;
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './select.stories';
 
+<Meta of={Stories} />
+
+# セレクトボックスコンポーネント
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
 .c-selectbox {
   position: relative;
 
@@ -34,6 +47,10 @@
       background-color: #f5f5f5;
       color: #c4c4c4;
     }
+
+    &.is-error {
+      border-color: red;
+    }
   }
 
   &__icon {
@@ -50,3 +67,7 @@
     }
   }
 }
+  `}
+/>
+
+

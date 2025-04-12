@@ -1,0 +1,34 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './textlimit.stories';
+
+<Meta of={Stories} />
+
+# 文字数制限
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
+.u-textlimit {
+  --text-limit: 1;
+  &:not([data-text-limit]) , &[data-text-limit = '1'] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &[data-text-limit]:not([data-text-limit = '1']) {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--text-limit);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+  `}
+/>
+
+

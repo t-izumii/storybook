@@ -3,9 +3,10 @@ import './grid.scss';
 export interface Props {
   column?: number;
   gap?: number;
+  gapSp?: number;
 }
 
-export const create = ({ column = 2, gap = 40 }: Props) => {
+export const create = ({ column = 2, gap = 40 , gapSp= 20 }: Props) => {
   const tag = document.createElement('div');
   const col = document.createElement('div');
   col.className = 'l-grid__col';
@@ -16,10 +17,13 @@ export const create = ({ column = 2, gap = 40 }: Props) => {
 
   tag.className = ['l-grid'].join('');
 
-  const gapRem = gap / 16 + 'rem';
+  function rem(px: number) {
+    return px / 16 + 'rem';
+  }
 
   tag.style.setProperty('--column', `${column}`);
-  tag.style.setProperty('--gap', gapRem);
+  tag.style.setProperty('--gap', rem(gap));
+  tag.style.setProperty('--gap-sp', rem(gapSp));
 
   return tag;
 };

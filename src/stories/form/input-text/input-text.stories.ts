@@ -6,8 +6,7 @@ import { create } from './input-text';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Form/input-text',
-  tags: ['autodocs'],
+  title: 'Form/Input-text',
   render: (args) => {
     return create(args);
   },
@@ -19,6 +18,7 @@ const meta = {
       options: ['small', 'medium', 'large', 'max'],
     },
     active: { control: 'boolean' },
+    errorState: { control: 'boolean' },
   },
 } satisfies Meta<Props>;
 
@@ -30,6 +30,7 @@ export const base: Story = {
     size: 'medium',
     active: true,
     label: '',
+    errorState: false,
     placeholder: 'Placeholder',
   },
 };

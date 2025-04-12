@@ -1,0 +1,38 @@
+@use '../../../styles/global.scss' as *;
+
+.c-form {
+
+  &.--flex {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+  }
+  &__label {
+    font-size: rem(16);
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__subtext {
+    font-size: rem(14);
+    margin-top: rem(8);
+  }
+
+  &__field {
+    margin-top: rem(8);
+
+    &:has(.c-radio) , &:has(.c-checkbox) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(16);
+    }
+  }
+
+  &__errortext {
+    color: red;
+    font-size: rem(14);
+    margin-top: rem(8);
+  }
+}

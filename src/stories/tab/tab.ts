@@ -27,16 +27,13 @@ export const create = ({
     const tabButtons = tabGroup.querySelectorAll('.js-tab-button');
     const tabItems = tabGroup.querySelectorAll('.js-tab-item');
 
-    // 各タブボタンにクリックイベントを追加
     tabButtons.forEach((button, index) => {
       button.addEventListener('click', () => {
-        // タブパネルの表示/非表示を切り替え
         tabItems.forEach((item) => {
           item.setAttribute('hidden', '');
         });
         tabItems[index].removeAttribute('hidden');
 
-        // アクティブ状態を切り替え
         tabButtons.forEach((tabButton) => {
           tabButton.classList.remove('is-active');
           tabButton.setAttribute('aria-selected', 'false');

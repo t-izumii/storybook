@@ -1,20 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/html';
 import { fn } from '@storybook/test';
 
-import type { Props } from './media';
-import { create } from './media';
+import type { Props } from './select';
+import { create } from './select';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Layout/Media',
+  title: 'Form/Select',
   render: (args) => {
     return create(args);
   },
   argTypes: {
-    title: { control: 'text' },
-    text: { control: 'text' },
-    button: { control: 'text' },
-    reverse: { control: 'boolean' },
+    size: {
+      control: { type: 'select' },
+      options: ['small', 'medium', 'large', 'max'],
+    },
+    active: { control: 'boolean' },
+    errorState: { control: 'boolean' },
   },
 } satisfies Meta<Props>;
 
@@ -23,9 +25,8 @@ type Story = StoryObj<Props>;
 
 export const base: Story = {
   args: {
-    title: 'Title',
-    text: 'Text',
-    button: 'Button',
-    reverse: false,
+    size: 'medium',
+    active: true,
+    errorState: false,
   },
 };

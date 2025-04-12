@@ -1,0 +1,75 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './radio.stories';
+
+<Meta of={Stories} />
+
+# ラジオボタンコンポーネント
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
+.c-radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  &:has(.c-radio__input:disabled) {
+    color: #c4c4c4;
+
+    .c-radio__frag {
+      border-color: #c4c4c4;
+      &::after {
+        background-color: #c4c4c4;
+      }
+    }
+  }
+
+  &__frag {
+    display: inline-block;
+    position: relative;
+    width: rem(20);
+    height: rem(20);
+    border-radius: 50%;
+    border: rem(2) solid #000;
+    margin-right: rem(4);
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: rem(12);
+      height: rem(12);
+      content: '';
+      border-radius: 50%;
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: #000;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(20);
+    height: rem(20);
+    margin: 0;
+    opacity: 0;
+
+    &:checked {
+      & + .c-radio__frag::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+  `}
+/>
+
+

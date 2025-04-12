@@ -26,7 +26,7 @@ export const create = ({}: Props) => {
       const target = event.target;
       const dataModal = target.dataset.modal;
       const modal = document.querySelector('.js-modal[data-modal="' + dataModal + '"]');
-      modal.style.display = 'block';
+      modal.classList.add('is-active');
       trapFocus(modal);
     });
   });
@@ -35,10 +35,10 @@ export const create = ({}: Props) => {
     modal.addEventListener('click', function (event) {
       const target = event.target;
       if (target.classList.contains('js-modal-close')) {
-        modal.closest('.js-modal').style.display = 'none';
+        modal.closest('.js-modal').classList.remove('is-active');
         document.activeElement.blur();
       } else if (target.classList.contains('js-modal-overlay')) {
-        target.parentNode.style.display = 'none';
+        target.parentNode.classList.remove('is-active');
         document.activeElement.blur();
       }
     });
