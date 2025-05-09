@@ -1,29 +1,28 @@
-@use '../../styles/global.scss' as *;
+@use '../../../styles/global.scss' as *;
 
 .l-flex {
   --column: 2;
+  --column-tablet: var(--column);
+  --column-sp: var(--column-tablet);
   --gap: 2.5rem;
-  --gap-sp: var(--gap);
+  --gap-tab: var(--gap);
+  --gap-sp: var(--gap-tab);
 
   display: flex;
   gap: var(--gap);
+  flex-wrap: wrap;
 
-  @include media-breakpoint-sp {
-    flex-direction: column;
-    gap: var(--gap-sp);
+  @include media-breakpoint-tab {
+    gap: var(--gap-tab);
   }
 
-  &.--wrap {
-    flex-wrap: wrap;
+  @include media-breakpoint-sp {
+    gap: var(--gap-sp);
   }
 
   &.--nowrap-sp {
     @include media-breakpoint-sp {
       flex-flow: row nowrap;
-
-      .l-flex__col {
-        width: calc((100% - (var(--column) - 1) * var(--gap-sp)) / var(--column));
-      }
     }
   }
 
@@ -103,9 +102,13 @@
     // dev
     background-color: #000;
     height: 100px;
+    
+    @include media-breakpoint-tab {
+      width: calc((100% - (var(--column-tablet) - 1) * var(--gap-tab)) / var(--column-tablet));
+    }
 
     @include media-breakpoint-sp {
-      width: 100%;
+      width: calc((100% - (var(--column-sp) - 1) * var(--gap-sp)) / var(--column-sp));
     }
   }
 }

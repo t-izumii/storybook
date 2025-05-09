@@ -11,8 +11,12 @@ const meta = {
     return create(args);
   },
   argTypes: {
+    content: { control: 'number' },
     column: { control: 'number' },
+    columnTablet: { control: 'number' },
+    columnSp: { control: 'number' },
     gap: { control: 'number' },
+    gapTablet: { control: 'number' },
     gapSp: { control: 'number' },
   },
 } satisfies Meta<Props>;
@@ -22,8 +26,12 @@ type Story = StoryObj<Props>;
 
 export const base: Story = {
   args: {
+    content: 2,
     column: 2,
+    columnTablet: 1,
+    columnSp: 1,
     gap: 24,
-    gapSp: 24,
+    gapTablet: 16,
+    gapSp: 16,
   },
 };

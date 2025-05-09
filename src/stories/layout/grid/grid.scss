@@ -1,0 +1,30 @@
+@use '../../../styles/global.scss' as *;
+
+.l-grid {
+  --column: 2;
+  --column-tablet: var(--column);
+  --column-sp: var(--column-tablet);
+  --gap: 2.5rem;
+  --gap-tab: var(--gap);
+  --gap-sp: var(--gap-tab);
+
+  display: grid;
+  grid-template-columns: repeat(var(--column), 1fr);
+  gap: var(--gap);
+
+  @include media-breakpoint-tab {
+    grid-template-columns: repeat(var(--column-tablet), 1fr);
+    gap: var(--gap-tab);
+  }
+
+  @include media-breakpoint-sp {
+    grid-template-columns: repeat(var(--column-sp), 1fr);
+    gap: var(--gap-sp);
+  }
+
+  &__col {
+    // dev
+    background-color: #000;
+    height: 100px;
+  }
+}

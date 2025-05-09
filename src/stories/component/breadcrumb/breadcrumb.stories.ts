@@ -1,20 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/html';
 import { fn } from '@storybook/test';
 
-import type { Props } from './flex';
-import { create } from './flex';
+import type { Props } from './breadcrumb';
+import { create } from './breadcrumb';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Layout/Flex',
+  title: 'Component/Breadcrumb',
   render: (args) => {
     return create(args);
   },
   argTypes: {
-    column: { control: 'number' },
-    gap: { control: 'number' },
-    gapSp: { control: 'number' },
   },
+
 } satisfies Meta<Props>;
 
 export default meta;
@@ -22,8 +20,5 @@ type Story = StoryObj<Props>;
 
 export const base: Story = {
   args: {
-    column: 2,
-    gap: 24,
-    gapSp: 24,
   },
 };

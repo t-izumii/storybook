@@ -1,8 +1,5 @@
 import type { StorybookConfig } from '@storybook/html-vite';
-import path from 'path';
-import { fileURLToPath } from 'url'; // 追加
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url)); // 追加
+import * as path from 'node:path';
 
 const config: StorybookConfig = {
   stories: [
