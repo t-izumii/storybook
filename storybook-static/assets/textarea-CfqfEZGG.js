@@ -1,0 +1,1 @@
+const o=({active:a=!1,label:t="",placeholder:r="",errorState:l=!1})=>{const e=document.createElement("textarea");return e.value=t,e.placeholder=r,e.rows=8,e.cols=50,a||(e.disabled=!0),e.className=["c-textarea",l?"is-error":""].filter(Boolean).join(" "),e};export{o as c};

@@ -1,0 +1,1 @@
+*{margin:0;padding:0;box-sizing:border-box}.u-textlimit{--text-limit: 1}.u-textlimit:not([data-text-limit]),.u-textlimit[data-text-limit="1"]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.u-textlimit[data-text-limit]:not([data-text-limit="1"]){display:-webkit-box;-webkit-line-clamp:var(--text-limit);-webkit-box-orient:vertical;overflow:hidden}

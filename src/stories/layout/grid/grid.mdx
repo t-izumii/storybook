@@ -15,8 +15,8 @@ import * as Stories from './grid.stories';
   code={`
 .l-grid {
   --column: 2;
-  --column-tablet: var(--column);
-  --column-sp: var(--column-tablet);
+  --column-tab: var(--column);
+  --column-sp: var(--column-tab);
   --gap: 2.5rem;
   --gap-tab: var(--gap);
   --gap-sp: var(--gap-tab);
@@ -26,7 +26,7 @@ import * as Stories from './grid.stories';
   gap: var(--gap);
 
   @include media-breakpoint-tab {
-    grid-template-columns: repeat(var(--column-tablet), 1fr);
+    grid-template-columns: repeat(var(--column-tab), 1fr);
     gap: var(--gap-tab);
   }
 

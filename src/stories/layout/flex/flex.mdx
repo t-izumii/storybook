@@ -15,8 +15,8 @@ import * as Stories from './flex.stories';
   code={`
 .l-flex {
   --column: 2;
-  --column-tablet: var(--column);
-  --column-sp: var(--column-tablet);
+  --column-tab: var(--column);
+  --column-sp: var(--column-tab);
   --gap: 2.5rem;
   --gap-tab: var(--gap);
   --gap-sp: var(--gap-tab);
@@ -117,7 +117,7 @@ import * as Stories from './flex.stories';
     height: 100px;
     
     @include media-breakpoint-tab {
-      width: calc((100% - (var(--column-tablet) - 1) * var(--gap-tab)) / var(--column-tablet));
+      width: calc((100% - (var(--column-tab) - 1) * var(--gap-tab)) / var(--column-tab));
     }
 
     @include media-breakpoint-sp {
