@@ -6,7 +6,7 @@ import { create } from './select';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Form/Select',
+  title: 'フォーム/セレクトボックス',
   render: (args) => {
     return create(args);
   },

@@ -5,7 +5,7 @@ import type { ButtonProps } from './Button';
 import { createButton } from './Button';
 
 const meta = {
-  title: 'Component/Button',
+  title: 'コンポーネント/ボタン',
   render: (args) => {
     return createButton(args);
   },

@@ -6,7 +6,7 @@ import { create } from './checkbox';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Form/Checkbox',
+  title: 'フォーム/チェックボックス',
   render: (args) => {
     return create(args);
   },

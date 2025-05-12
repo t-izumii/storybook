@@ -6,7 +6,7 @@ import { create } from './fade';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Animation/fade',
+  title: 'アニメーション/フェード',
   render: (args) => {
     return create(args);
   },

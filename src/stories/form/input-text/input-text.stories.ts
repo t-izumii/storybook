@@ -6,7 +6,7 @@ import { create } from './input-text';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Form/Input-text',
+  title: 'フォーム/テキスト入力',
   render: (args) => {
     return create(args);
   },

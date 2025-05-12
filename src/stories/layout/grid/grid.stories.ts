@@ -6,7 +6,7 @@ import { create } from './grid';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Layout/Grid',
+  title: 'レイアウト/Grid',
   render: (args) => {
     return create(args);
   },

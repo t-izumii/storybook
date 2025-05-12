@@ -6,7 +6,7 @@ import { create } from './media';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Layout/Media',
+  title: 'レイアウト/Media',
   render: (args) => {
     return create(args);
   },

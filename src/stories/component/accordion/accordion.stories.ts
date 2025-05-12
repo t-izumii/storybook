@@ -5,7 +5,7 @@ import { create } from './accordion';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Component/Accordion',
+  title: 'コンポーネント/アコーディオン',
   render: (args) => {
     return create(args);
   },
