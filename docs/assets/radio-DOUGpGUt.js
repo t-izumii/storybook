@@ -1,4 +1,4 @@
-import{j as r,M as n,C as a,S as s}from"./index-TzHqqzij.js";import{useMDXComponents as i}from"./index-D2tG-Uca.js";import{S as c,b as d}from"./radio.stories-CakRB3SV.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./radio-EYLaQdqC.js";function e(o){const t={h1:"h1",h2:"h2",...i(),...o.components};return r.jsxs(r.Fragment,{children:[r.jsx(n,{of:c}),`
+import{j as r,M as n,C as a,S as s}from"./index-u3GFYh61.js";import{useMDXComponents as i}from"./index-BvYweuI2.js";import{S as c,b as d}from"./radio.stories-CakRB3SV.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./radio-EYLaQdqC.js";function e(o){const t={h1:"h1",h2:"h2",...i(),...o.components};return r.jsxs(r.Fragment,{children:[r.jsx(n,{of:c}),`
 `,r.jsx(t.h1,{id:"ラジオボタンコンポーネント",children:"ラジオボタンコンポーネント"}),`
 `,r.jsx(t.h2,{id:"使用例",children:"使用例"}),`
 `,r.jsx(a,{of:d}),`

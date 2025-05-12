@@ -1,4 +1,4 @@
-import{j as e,M as n,C as c,S as a}from"./index-TzHqqzij.js";import{useMDXComponents as i}from"./index-D2tG-Uca.js";import{S as s,b as l}from"./checkbox.stories-Dt7GSScy.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./checkbox-DX628-SY.js";function r(t){const o={h1:"h1",h2:"h2",...i(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(n,{of:s}),`
+import{j as e,M as n,C as c,S as a}from"./index-u3GFYh61.js";import{useMDXComponents as i}from"./index-BvYweuI2.js";import{S as s,b as l}from"./checkbox.stories-Dt7GSScy.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./checkbox-DX628-SY.js";function r(t){const o={h1:"h1",h2:"h2",...i(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(n,{of:s}),`
 `,e.jsx(o.h1,{id:"チェックボックスコンポーネント",children:"チェックボックスコンポーネント"}),`
 `,e.jsx(o.h2,{id:"使用例",children:"使用例"}),`
 `,e.jsx(c,{of:l}),`

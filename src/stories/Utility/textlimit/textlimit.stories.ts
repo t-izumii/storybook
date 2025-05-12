@@ -6,7 +6,7 @@ import { create } from './textlimit';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Utility/Textlimit',
+  title: 'Utility/文字数制限',
   render: (args) => {
     return create(args);
   },

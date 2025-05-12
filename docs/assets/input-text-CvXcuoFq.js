@@ -1,4 +1,4 @@
-import{j as o,M as s,C as i,S as m}from"./index-TzHqqzij.js";import{useMDXComponents as n}from"./index-D2tG-Uca.js";import{S as a,b as c}from"./input-text.stories-BpyOoq33.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./input-text-Dgly9OeA.js";function t(r){const e={h1:"h1",h2:"h2",...n(),...r.components};return o.jsxs(o.Fragment,{children:[o.jsx(s,{of:a}),`
+import{j as o,M as s,C as i,S as m}from"./index-u3GFYh61.js";import{useMDXComponents as n}from"./index-BvYweuI2.js";import{S as a,b as c}from"./input-text.stories-BpyOoq33.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./input-text-Dgly9OeA.js";function t(r){const e={h1:"h1",h2:"h2",...n(),...r.components};return o.jsxs(o.Fragment,{children:[o.jsx(s,{of:a}),`
 `,o.jsx(e.h1,{id:"インプットテキストコンポーネント",children:"インプットテキストコンポーネント"}),`
 `,o.jsx(e.h2,{id:"使用例",children:"使用例"}),`
 `,o.jsx(i,{of:c}),`

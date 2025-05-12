@@ -1,4 +1,4 @@
-import{j as o,M as s,C as c,S as i}from"./index-TzHqqzij.js";import{useMDXComponents as t}from"./index-D2tG-Uca.js";import{S as a,b as d}from"./textarea.stories-Df4ld6fa.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./textarea-CfqfEZGG.js";function n(r){const e={h1:"h1",h2:"h2",...t(),...r.components};return o.jsxs(o.Fragment,{children:[o.jsx(s,{of:a}),`
+import{j as o,M as s,C as c,S as i}from"./index-u3GFYh61.js";import{useMDXComponents as t}from"./index-BvYweuI2.js";import{S as a,b as d}from"./textarea.stories-Df4ld6fa.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./textarea-CfqfEZGG.js";function n(r){const e={h1:"h1",h2:"h2",...t(),...r.components};return o.jsxs(o.Fragment,{children:[o.jsx(s,{of:a}),`
 `,o.jsx(e.h1,{id:"テキストエリアコンポーネント",children:"テキストエリアコンポーネント"}),`
 `,o.jsx(e.h2,{id:"使用例",children:"使用例"}),`
 `,o.jsx(c,{of:d}),`

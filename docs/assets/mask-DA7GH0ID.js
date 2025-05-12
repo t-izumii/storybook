@@ -1,6 +1,5 @@
-import{j as a,M as r,C as o,S as e}from"./index-TzHqqzij.js";import{useMDXComponents as t}from"./index-D2tG-Uca.js";import{S as c,b as p}from"./mask.stories-bDIaUK_j.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function i(s){const n={h1:"h1",h2:"h2",p:"p",...t(),...s.components};return a.jsxs(a.Fragment,{children:[a.jsx(r,{of:c}),`
-`,a.jsx(n.h1,{id:"アニメーションフェード",children:"アニメーションフェード"}),`
-`,a.jsx(n.p,{children:"アコーディオンコンポーネントは、コンテンツを折りたたんで表示するUI要素です。"}),`
+import{j as a,M as r,C as o,S as e}from"./index-u3GFYh61.js";import{useMDXComponents as i}from"./index-BvYweuI2.js";import{S as c,b as p}from"./mask.stories-bDIaUK_j.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function t(s){const n={h1:"h1",h2:"h2",...i(),...s.components};return a.jsxs(a.Fragment,{children:[a.jsx(r,{of:c}),`
+`,a.jsx(n.h1,{id:"アニメーションマスク",children:"アニメーションマスク"}),`
 `,a.jsx(n.h2,{id:"使用例",children:"使用例"}),`
 `,a.jsx(o,{of:p}),`
 `,a.jsx(n.h2,{id:"css",children:"CSS"}),`
@@ -37,4 +36,4 @@ import{j as a,M as r,C as o,S as e}from"./index-TzHqqzij.js";import{useMDXCompon
 `,a.jsx(n.h2,{id:"js",children:"Js"}),`
 `,a.jsx(e,{language:"javascript",code:`
 
-  `})]})}function v(s={}){const{wrapper:n}={...t(),...s.components};return n?a.jsx(n,{...s,children:a.jsx(i,{...s})}):i(s)}export{v as default};
+  `})]})}function v(s={}){const{wrapper:n}={...i(),...s.components};return n?a.jsx(n,{...s,children:a.jsx(t,{...s})}):t(s)}export{v as default};

@@ -1,4 +1,4 @@
-import{j as t,M as s,C as a,S as o}from"./index-TzHqqzij.js";import{useMDXComponents as i}from"./index-D2tG-Uca.js";import{S as c,b as l}from"./accordion.stories-CyawFvtY.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function r(e){const n={h1:"h1",h2:"h2",p:"p",...i(),...e.components};return t.jsxs(t.Fragment,{children:[t.jsx(s,{of:c}),`
+import{j as t,M as s,C as a,S as o}from"./index-u3GFYh61.js";import{useMDXComponents as i}from"./index-BvYweuI2.js";import{S as c,b as l}from"./accordion.stories-CyawFvtY.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function r(e){const n={h1:"h1",h2:"h2",p:"p",...i(),...e.components};return t.jsxs(t.Fragment,{children:[t.jsx(s,{of:c}),`
 `,t.jsx(n.h1,{id:"アコーディオンコンポーネント",children:"アコーディオンコンポーネント"}),`
 `,t.jsx(n.p,{children:"アコーディオンコンポーネントは、コンテンツを折りたたんで表示するUI要素です。"}),`
 `,t.jsx(n.h2,{id:"使用例",children:"使用例"}),`

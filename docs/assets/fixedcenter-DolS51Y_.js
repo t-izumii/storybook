@@ -1,5 +1,5 @@
-import{j as e,M as c,C as s,S as i}from"./index-TzHqqzij.js";import{useMDXComponents as r}from"./index-D2tG-Uca.js";import{S as a,b as d}from"./fixedcenter.stories-E47JW29h.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function o(n){const t={h1:"h1",h2:"h2",...r(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(c,{of:a}),`
-`,e.jsx(t.h1,{id:"追従コンテンツ",children:"追従コンテンツ"}),`
+import{j as e,M as c,C as s,S as i}from"./index-u3GFYh61.js";import{useMDXComponents as r}from"./index-BvYweuI2.js";import{S as a,b as d}from"./fixedcenter.stories-E47JW29h.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function o(n){const t={h1:"h1",h2:"h2",...r(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(c,{of:a}),`
+`,e.jsx(t.h1,{id:"交点監視",children:"交点監視"}),`
 `,e.jsx(t.h2,{id:"使用例",children:"使用例"}),`
 `,e.jsx(s,{of:d}),`
 `,e.jsx(t.h2,{id:"css",children:"CSS"}),`

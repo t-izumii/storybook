@@ -1,4 +1,4 @@
-import{j as a,M as o,C as s,S as p}from"./index-TzHqqzij.js";import{useMDXComponents as e}from"./index-D2tG-Uca.js";import{S as i,b as c}from"./grid.stories-BbySDM1i.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function t(r){const n={h1:"h1",h2:"h2",...e(),...r.components};return a.jsxs(a.Fragment,{children:[a.jsx(o,{of:i}),`
+import{j as a,M as o,C as s,S as p}from"./index-u3GFYh61.js";import{useMDXComponents as e}from"./index-BvYweuI2.js";import{S as i,b as c}from"./grid.stories-BbySDM1i.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function t(r){const n={h1:"h1",h2:"h2",...e(),...r.components};return a.jsxs(a.Fragment,{children:[a.jsx(o,{of:i}),`
 `,a.jsx(n.h1,{id:"gridレイアウト",children:"Gridレイアウト"}),`
 `,a.jsx(n.h2,{id:"使用例",children:"使用例"}),`
 `,a.jsx(s,{of:c}),`

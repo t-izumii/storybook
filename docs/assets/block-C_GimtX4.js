@@ -1,5 +1,5 @@
-import{j as o,M as a,C as t,S as i}from"./index-TzHqqzij.js";import{useMDXComponents as n}from"./index-D2tG-Uca.js";import{S as m,b as c,s as x,r as p,c as f,t as d}from"./block.stories-DP2KD6vs.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./input-text-Dgly9OeA.js";import"./select-CedAVv5M.js";import"./checkbox-DX628-SY.js";import"./radio-EYLaQdqC.js";import"./textarea-CfqfEZGG.js";function s(e){const r={h1:"h1",h2:"h2",...n(),...e.components};return o.jsxs(o.Fragment,{children:[o.jsx(a,{of:m}),`
-`,o.jsx(r.h1,{id:"ラジオボタンコンポーネント",children:"ラジオボタンコンポーネント"}),`
+import{j as o,M as a,C as t,S as i}from"./index-u3GFYh61.js";import{useMDXComponents as n}from"./index-BvYweuI2.js";import{S as m,b as c,s as x,r as p,c as f,t as d}from"./block.stories-DP2KD6vs.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./input-text-Dgly9OeA.js";import"./select-CedAVv5M.js";import"./checkbox-DX628-SY.js";import"./radio-EYLaQdqC.js";import"./textarea-CfqfEZGG.js";function s(e){const r={h1:"h1",h2:"h2",...n(),...e.components};return o.jsxs(o.Fragment,{children:[o.jsx(a,{of:m}),`
+`,o.jsx(r.h1,{id:"フォームブロックコンポーネント",children:"フォームブロックコンポーネント"}),`
 `,o.jsx(r.h2,{id:"使用例",children:"使用例"}),`
 `,o.jsx(t,{of:c}),`
 `,o.jsx(t,{of:x}),`

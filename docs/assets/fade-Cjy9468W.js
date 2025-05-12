@@ -1,6 +1,5 @@
-import{j as a,M as i,C as o,S as n}from"./index-TzHqqzij.js";import{useMDXComponents as s}from"./index-D2tG-Uca.js";import{S as l,b as m}from"./fade.stories-tquwYgKe.js";import"./iframe-MGk-KNrZ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function r(t){const e={h1:"h1",h2:"h2",p:"p",...s(),...t.components};return a.jsxs(a.Fragment,{children:[a.jsx(i,{of:l}),`
+import{j as a,M as i,C as o,S as n}from"./index-u3GFYh61.js";import{useMDXComponents as s}from"./index-BvYweuI2.js";import{S as l,b as m}from"./fade.stories-tquwYgKe.js";import"./iframe-BWNJ7hDR.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function r(t){const e={h1:"h1",h2:"h2",...s(),...t.components};return a.jsxs(a.Fragment,{children:[a.jsx(i,{of:l}),`
 `,a.jsx(e.h1,{id:"アニメーションフェード",children:"アニメーションフェード"}),`
-`,a.jsx(e.p,{children:"アコーディオンコンポーネントは、コンテンツを折りたたんで表示するUI要素です。"}),`
 `,a.jsx(e.h2,{id:"使用例",children:"使用例"}),`
 `,a.jsx(o,{of:m}),`
 `,a.jsx(e.h2,{id:"css",children:"CSS"}),`
