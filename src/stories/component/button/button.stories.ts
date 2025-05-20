@@ -12,7 +12,6 @@ const meta = {
   argTypes: {
     label: { control: 'text' },
     onClick: { action: 'onClick' },
-    mode: { control: 'text' },
     size: {
       control: { type: 'select' },
       options: ['small', 'medium', 'large'],
@@ -27,7 +26,6 @@ type Story = StoryObj<ButtonProps>;
 
 export const base: Story = {
   args: {
-    mode: '',
     size: 'medium',
     active: true,
     label: 'Button',

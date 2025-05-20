@@ -46,6 +46,7 @@ export const create = ({
           modules: [Autoplay],
           loop: true,
           speed: 8000,
+          allowTouchMove: false,
           slidesPerView: 'auto',
           centeredSlides: true,
           spaceBetween: 10,

@@ -1,0 +1,1 @@
+const n=({size:t="medium",active:a=!1,errorState:r=!1,label:l="",placeholder:c=""})=>{const e=document.createElement("input");return e.type="text",e.value=l,e.placeholder=c,a||(e.disabled=!0),e.className=["c-input-text",`--${t}`,r?"is-error":""].filter(Boolean).join(" "),e};export{n as c};

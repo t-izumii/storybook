@@ -1,7 +1,6 @@
 import './button.scss';
 
 export interface ButtonProps {
-  mode?: string;
   size?: 'small' | 'medium' | 'large';
   active ?: boolean;
   label: string;
@@ -9,7 +8,6 @@ export interface ButtonProps {
 }
 
 export const createButton = ({
-  mode = '',
   size = 'medium',
   active = true,
   label,
@@ -26,8 +24,7 @@ export const createButton = ({
     btn.disabled = true;
   }
 
-  const buttonMode = mode ?   `--${mode}`: '';
-  btn.className = ['c-button', `--${size}`, buttonMode].join(' ');
+  btn.className = ['c-button', `--${size}`].join(' ');
 
   return btn;
 };

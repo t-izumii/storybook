@@ -1,0 +1,109 @@
+@use '../../../styles/global.scss' as *;
+
+.c-pager {
+  display: flex;
+  gap: rem(16);
+  align-items: center;
+  justify-content: space-between;
+  max-width: rem(614);
+
+  @include media-breakpoint-sp {
+      max-width: rem(335);
+  }
+
+  &__item {
+      display: block;
+      flex-shrink: 0;
+      width: auto;
+      height: auto;
+
+      &.--prev {
+          margin-right: rem(16);
+
+          @include media-breakpoint-sp {
+              margin-right: 0;
+          }
+      }
+
+      &.--next {
+          margin-left: rem(16);
+
+          @include media-breakpoint-sp {
+              margin-left: 0;
+          }
+      }
+  }
+
+  &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(40);
+      font-family: Alata, sans-serif;
+      font-size: rem(20);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+
+      @include media-breakpoint-sp {
+          width: rem(32);
+          font-size: rem(15);
+      }
+
+      &.--is-active {
+      }
+  }
+
+  &__button {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-left: rem(48);
+      font-size: rem(20);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+
+      @include media-breakpoint-sp {
+          padding-left: rem(32);
+          font-size: 0;
+      }
+
+      &.--prev {
+          padding-right: rem(48);
+          padding-left: 0;
+          text-align: right;
+
+          @include media-breakpoint-sp {
+              padding-right: rem(32);
+              padding-left: 0;
+          }
+
+          .c-icon-circle {
+              right: 0;
+          }
+
+          .c-icon {
+              transform: translate(-50%, -50%) rotateY(180deg);
+          }
+      }
+
+      &.--next {
+          .c-icon-circle {
+              left: 0;
+          }
+      }
+
+      .c-icon-circle {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+      }
+
+      .c-icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          mask-image: var(--icon-arrow);
+          transform: translate(-50%, -50%);
+      }
+  }
+}

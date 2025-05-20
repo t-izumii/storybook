@@ -1,0 +1,66 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './slideshow.stories';
+
+<Meta of={Stories} />
+
+# リストOLコンポーネント
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
+.c-slideshow {
+  width: 100%;
+
+  &__swiper {
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+      width: auto;
+    }
+  }
+}
+
+  `}
+/>
+
+
+## JS
+<Source
+  language="js"
+  code={`
+  const slideshowElements = tag.querySelectorAll('.js-slideshow-swiper');
+  slideshowElements.forEach((element) => {
+    new Swiper(element, {
+      modules: [Autoplay],
+      loop: true,
+      speed: 8000,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 10,
+      
+      autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+      },
+      breakpoints: {
+          768: {
+              spaceBetween: 20,
+          },
+      },
+    });
+  });
+`}
+/>
+
+
+
+
+
+

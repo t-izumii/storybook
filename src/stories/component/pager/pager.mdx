@@ -1,0 +1,49 @@
+import { Meta, Story, Canvas, Controls, Source } from '@storybook/blocks';
+import * as Stories from './pager.stories';
+
+<Meta of={Stories} />
+
+# リストOLコンポーネント
+
+## 使用例
+
+<Canvas of={Stories.base} />
+
+## CSS
+<Source
+  language="css"
+  code={`
+.c-list-ul {
+  list-style: none;
+  font-size: rem(16);
+  line-height: 1.5;
+
+  &__item {
+    position: relative;
+    padding-left: rem(28);
+
+    & + & {
+        margin-top: rem(8);
+    }
+
+    &::before {
+        position: absolute;
+        top: calc(1em * 1.5 / 2 - rem(4));
+        left: rem(8);
+        display: block;
+        width: rem(10);
+        height: rem(10);
+        content: "";
+        background-color: #000;
+        border-radius: 50%;
+    }
+  }
+}
+  `}
+/>
+
+
+
+
+
+
