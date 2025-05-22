@@ -1,16 +1,9 @@
-@use "../../../styles/global.scss" as *;
-
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
+import{j as a,M as s,C as i,S as o}from"./index-BYK2ORcy.js";import{useMDXComponents as r}from"./index-BLysIC8v.js";import{S as m,b as l}from"./fade.stories-A62ztQNQ.js";import"./iframe-EDjIsdKu.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";function n(e){const t={h1:"h1",h2:"h2",...r(),...e.components};return a.jsxs(a.Fragment,{children:[a.jsx(s,{of:m}),`
+`,a.jsx(t.h1,{id:"アニメーションフェード",children:"アニメーションフェード"}),`
+`,a.jsx(t.h2,{id:"使用例",children:"使用例"}),`
+`,a.jsx(i,{of:l}),`
+`,a.jsx(t.h2,{id:"css",children:"CSS"}),`
+`,a.jsx(o,{language:"css",code:`
 .u-anime-fade {
     @property --movementx {
         syntax: "<length>";
@@ -120,3 +113,6 @@
         }
     }
 }
+
+
+  `})]})}function h(e={}){const{wrapper:t}={...r(),...e.components};return t?a.jsx(t,{...e,children:a.jsx(n,{...e})}):n(e)}export{h as default};

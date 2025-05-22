@@ -47,12 +47,14 @@ import * as Stories from './fade.stories';
     --movementy: 30;
     --movementy-sp: var(--movementy);
     --opacity: 0;
-    --ease: linear;
+    --ease1: linear;
+    --ease2: var(--ease1);
 
     opacity: var(--opacity);
     transform: translateX(calc(var(--movementx) * 1px))
         translateY(calc(var(--movementy) * 1px));
-    transition: all calc(var(--duration) * 1s) calc(var(--delay) * 1s) var(--ease);
+    transition: transform calc(var(--duration) * 1s) calc(var(--delay) * 1s) var(--ease1),
+        opacity calc(var(--duration) * 1s) calc(var(--delay) * 1s) var(--ease2);
     &.is-active {
         opacity: 1;
         transform: translateX(0) translateY(0);
@@ -61,7 +63,8 @@ import * as Stories from './fade.stories';
     @include media-breakpoint-sp {
         transform: translateX(calc(var(--movementx-sp) * 1px))
             translateY(calc(var(--movementy-sp) * 1px));
-        transition: all calc(var(--duration-sp) * 1s) calc(var(--delay-sp) * 1s) var(--ease);
+        transition: transform calc(var(--duration-sp) * 1s) calc(var(--delay-sp) * 1s) var(--ease1),
+            opacity calc(var(--duration-sp) * 1s) calc(var(--delay-sp) * 1s) var(--ease2);
     }
 }
 
@@ -93,7 +96,8 @@ import * as Stories from './fade.stories';
         opacity: var(--opacity);
         transform: translateX(calc(var(--movementx-sp) * 1px))
             translateY(calc(var(--movementy-sp) * 1px));
-        transition: all calc(var(--duration-sp) * 1s) calc(var(--delay-sp) * 1s) var(--ease);
+        transition: transform calc(var(--duration-sp) * 1s) calc(var(--delay-sp) * 1s) var(--ease1),
+            opacity calc(var(--duration-sp) * 1s) calc(var(--delay-sp) * 1s) var(--ease2);
 
         &.is-active {
             opacity: 1;
@@ -118,6 +122,7 @@ import * as Stories from './fade.stories';
         }
     }
 }
+
 
   `}
 />

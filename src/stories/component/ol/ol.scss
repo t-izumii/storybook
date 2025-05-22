@@ -7,6 +7,13 @@
   &__item {
     position: relative;
 
+    .c-list-ol {
+      margin-left: rem(24);
+    }
+    .c-list-ul {
+      margin-left: rem(24);
+    }
+
     & + & {
         margin-top: rem(8);
     }
@@ -15,6 +22,9 @@
         display: inline-block;
         content: counter(list-counter) ".";
         counter-increment: list-counter;
+        min-width: rem(32);
+        text-align: right;
+        margin-right: rem(4);
     }
   }
 }

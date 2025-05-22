@@ -6,16 +6,22 @@ import { create } from './ul';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'コンポーネント/ULリスト',
+  title: 'コンポーネント/リスト-UL',
   render: (args) => {
     return create(args);
   },
-  argTypes: {},
+  argTypes: {
+    length: { control: 'number' },
+    childLength: { control: 'number' },
+  },
 } satisfies Meta<Props>;
 
 export default meta;
 type Story = StoryObj<Props>;
 
 export const base: Story = {
-  args: {},
+  args: {
+    length: 10,
+    childLength: 0,
+  },
 };
