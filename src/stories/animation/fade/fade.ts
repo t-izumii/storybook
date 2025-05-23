@@ -7,8 +7,8 @@ export interface Props {
   duration?: number;
   delay?: number;
   opacity?: number;
-  ease1?: string;
-  ease2?: string;
+  easeMovement?: string;
+  easeOpacity?: string;
 }
 
 export const create = ({
@@ -18,8 +18,8 @@ export const create = ({
   duration = 0.5,
   delay = 0,
   opacity = 0,
-  ease1 = 'linear',
-  ease2 = 'linear',
+  easeMovement = 'linear',
+  easeOpacity = 'linear',
 }: Props) => {
   const tag = document.createElement('div');
   tag.innerHTML = `
@@ -37,11 +37,11 @@ export const create = ({
   tag.style.setProperty('--movementx', `${movementx}`);
   tag.style.setProperty('--movementy', `${movementy}`);
   tag.style.setProperty('--opacity', `${opacity}`);
-  tag.style.setProperty('--ease1', `${ease1}`);
-  if (ease2) {
-    tag.style.setProperty('--ease2', `${ease2}`);
+  tag.style.setProperty('--ease1', `${easeMovement}`);
+  if (easeOpacity) {
+    tag.style.setProperty('--ease2', `${easeOpacity}`);
   } else {
-    tag.style.setProperty('--ease2', `${ease1}`);
+    tag.style.setProperty('--ease2', `${easeMovement}`);
   }
   
   return tag;

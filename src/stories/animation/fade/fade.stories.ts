@@ -17,8 +17,8 @@ const meta = {
     duration: { control: 'number' },
     delay: { control: 'number' },
     opacity: { control: 'number' },
-    ease1: { control: 'text' },
-    ease2: { control: 'text' },
+    easeMovement: { control: 'text' },
+    easeOpacity: { control: 'text' },
   },
 
 } satisfies Meta<Props>;
@@ -34,7 +34,7 @@ export const base: Story = {
     duration: 0.5,
     delay: 0,
     opacity: 0,
-    ease1: 'linear',
-    ease2: '',
+    easeMovement: 'linear',
+    easeOpacity: '',
   },
 };
